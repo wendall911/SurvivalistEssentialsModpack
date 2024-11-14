@@ -1,0 +1,23 @@
+Recoomendations for running on Server:
+
+Download modpack zip file.
+
+Remove:
+    ExtremeSoundMuffler-3.48.3_NeoForge-1.21.jar
+    appleskin-neoforge-mc1.21-3.0.5.jar
+    autoclicker-neoforge-21.1.0.jar
+    cleanview-1.21.1-v1-neoforge.jar
+    colorfulhearts-neoforge-1.21.1-10.3.8.jar
+    entityculling-neoforge-1.7.1-mc1.21.jar
+    fallingleaves-1.21-2.4.0.jar
+    hiddenrecipebook-1.21.1-4.7.jar
+    iris-neoforge-1.8.0-beta.8+mc1.21.1.jar
+    sodium-extra-neoforge-0.6.0-beta.3+mc1.21.1.jar
+    sodium-neoforge-0.6.0-beta.4+mc1.21.1.jar
+
+
+Consider adding:
+    https://www.curseforge.com/minecraft/mc-mods/dynamic-view
+    https://www.curseforge.com/minecraft/mc-mods/bluemap
+
+Included an example server.properties

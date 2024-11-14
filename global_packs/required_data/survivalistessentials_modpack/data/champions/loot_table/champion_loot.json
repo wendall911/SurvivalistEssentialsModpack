@@ -1,0 +1,2132 @@
+{
+  "pools": [
+    {
+      "name": "tier#1",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "enchant_randomly"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shears",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "§cC§6h§er§ao§3m§9a§5t§ci§6c §aS§3h§9e§5a§cr§6s",
+                "color": "rainbow",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "apothic_enchanting:chromatic": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Medkit",
+                "color": "#ff45f6",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:instant_health",
+                      "amplifier": 4,
+                      "duration": 240
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_healing"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 200
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Riot Shield",
+                "color": "#2c348f",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:base_color": "white",
+                "minecraft:banner_patterns": [
+                  {
+                    "color": "cyan",
+                    "pattern": "gradient_up"
+                  },
+                  {
+                    "color": "light_gray",
+                    "pattern": "half_horizontal_bottom"
+                  },
+                  {
+                    "color": "gray",
+                    "pattern": "stripe_middle"
+                  },
+                  {
+                    "color": "gray",
+                    "pattern": "border"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": {
+                  "min": 3,
+                  "max": 5
+                },
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Knockback Stick",
+                "color": "#ff9d00",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:knockback": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_axe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Greed",
+                "color": "#d99307",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:looting": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Propeller Hat",
+                "color": "#00ff00",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:feather_falling": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:dyed_color": 16711680
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Cactus",
+                "color": "#30de00",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:thorns": {
+                  "min": 2,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Match",
+                "color": "#c23511",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:fire_aspect": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Multiplier",
+                "color": "#96ffcb",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:piercing": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:multishot": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 90
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Mj\u00f6lnir",
+                "color": "#fff291",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:smite": {
+                  "min": 2,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 90
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Primitive Chainsaw",
+                "color": "#383130",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:efficiency": {
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 90
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_pickaxe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Primitive Mining Drill",
+                "color": "#756e6c",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:efficiency": {
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 90
+        }
+      ]
+    },
+    {
+      "name": "tier#2",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 5,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "ars_nouveau:source_berry_pie",
+          "weight": 150,
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 2
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Rod of Temptation",
+                "color": "dark_green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "apothic_enchanting:tempting": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Chainsaw",
+                "color": "dark_gray",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "apothic_enchanting:chainsaw": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Mining Drill",
+                "color": "dark_gray",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "apothic_enchanting:miners_fervor": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "S.W.A.T. Vest",
+                "color": "#997932",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:binding_curse": 1,
+                "minecraft:protection": {
+                  "min": 4,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Gem Magnet",
+                "color": "#ff0001",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:fortune": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 70
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Long Fall Boots",
+                "color": "#44d3e3",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:feather_falling": {
+                  "min": 5,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_leggings",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "S.W.A.T. Pants",
+                "color": "#997932",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:binding_curse": 1,
+                "minecraft:protection": {
+                  "min": 4,
+                  "max": 7
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_boots",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Soul Stepper",
+                "color": "#45b3cc",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:soul_speed": {
+                  "min": 4,
+                  "max": 5
+                },
+                "minecraft:unbreaking": 2
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Winter Flippers",
+                "color": "#abedeb",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:frost_walker": {
+                  "min": 1,
+                  "max": 2
+                },
+                "minecraft:depth_strider": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 90
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_helmet",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Diving Helmet",
+                "color": "#21ff55",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:respiration": {
+                  "min": 2,
+                  "max": 4
+                },
+                "minecraft:depth_strider": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Bulletproof Vest",
+                "color": "#edc266",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:projectile_protection": {
+                  "min": 4,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 2,
+                "max": 2
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Apocalypse",
+                "color": "#d90000",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 5
+                },
+                "minecraft:smite": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 90
+        }
+
+      ]
+    },
+    {
+      "name": "tier#3",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 15,
+                "max": 25
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 80,
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4,
+                "min": 1
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shears",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Wooly Bully",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "apothic_enchanting:worker_exploitation": 1,
+                "apothic_enchanting:growth_serum": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Basher",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "apothic_enchanting:shield_bash": {
+                  "min": 1,
+                  "max": 4
+                },
+                "apothic_enchanting:reflective_defenses": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:base_color": "yellow",
+                "minecraft:banner_patterns": [
+                  {
+                    "color": "orange",
+                    "pattern": "minecraft:piglin"
+                  },
+                  {
+                    "color": "orange",
+                    "pattern": "border"
+                  }
+                ]
+              }
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Machine Gun",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "apothic_enchanting:crescendo_of_bolts": {
+                  "min": 2,
+                  "max": 4
+                },
+                "minecraft:piercing": {
+                  "min": 3,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Ripper",
+                "color": "#470854",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:riptide": {
+                  "min": 3,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Lucky Charm",
+                "color": "#81d600",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 1
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.luck",
+                  "name": "ps-mob.lucky_charm",
+                  "amount": 1,
+                  "operation": "add_value",
+                  "id": "42600878-6e02-419a-97b4-695e8e4e3e14",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_hoe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Reaper's Scythe",
+                "color": "red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 3,
+                  "max": 6
+                },
+                "minecraft:vanishing_curse": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 70
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Poseidon's Trident",
+                "color": "#006653",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 2,
+                  "max": 5
+                },
+                "minecraft:loyalty": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Cornucopia",
+                "color": "#d4a715",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:looting": {
+                  "min": 1,
+                  "max": 4
+                },
+                "minecraft:punch": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 3,
+                "max": 3
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Y.O.L.T.",
+                "color": "#960019",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:vanishing_curse": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 45
+        }
+      ]
+    },
+    {
+      "name": "tier#4",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 25,
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 4,
+                "max": 4
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 50
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_hoe",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 4,
+                "max": 4
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Master Gardener",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:efficiency": {
+                  "min": 3,
+                  "max": 6
+                },
+                "apothic_enchanting:natures_blessing": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 50,
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 4,
+                "max": 4
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 4,
+                "max": 4
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Plated Elytra",
+                "color": "#ccbdf0",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 4,
+                "max": 4
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Immortal",
+                "color": "#ff9ee5",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 2,
+                  "max": 4
+                },
+                "minecraft:blast_protection": {
+                  "min": 2,
+                  "max": 4
+                },
+                "minecraft:projectile_protection": {
+                  "min": 2,
+                  "max": 4
+                },
+                "minecraft:fire_protection": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "conditions": [
+            {
+              "condition": "champions:champion_properties",
+              "entity": "this",
+              "tier": {
+                "min": 4,
+                "max": 4
+              }
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Robin's Bow",
+                "color": "#49db00",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:mending": 1,
+                "apothic_enchanting:endless_quiver": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "append",
+              "lore": [
+                {
+                  "text": "Survivalist Essentials",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 20
+        }
+      ]
+    }
+  ]
+}

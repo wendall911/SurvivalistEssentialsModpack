@@ -1,0 +1,41 @@
+[Temperature]
+	#Ice or snow layer will melt in warm place..
+	IceAndSnowMelt = true
+	#Add heat stroke effect in summer noon while in hot biome.
+	HeatStroke = false
+
+[Season]
+	#The lasting days of each term (24 in total).
+	# Default: 7
+	# Range: 1 ~ 1000
+	LastingDaysOfEachTerm = 7
+	#The index of the initial solar term.
+	# Default: 1
+	# Range: 1 ~ 24
+	InitialSolarTermIndex = 1
+	#Enable seasonal crop.
+	EnableSeasonalCrop = true
+	#Enable solar term change inform.
+	EnableInform = true
+	#Set the percentage multiplier of the probability of rain, the range should be between 0 and 1000.
+	# Default: 60
+	# Range: 0 ~ 1000
+	RainChancePercentMultiplier = 60
+	#Set the percentage multiplier of the probability of thunder in the rain, the range should be between 0 and 1000.
+	# Default: 100
+	# Range: 0 ~ 1000
+	ThunderChancePercentMultiplier = 100
+	#Enable seasonal animal breed.
+	EnableSeasonalBreed = false
+	#Enable seasonal bee behavior, bee would like spring and not like winter and cold.
+	EnableSeasonalBee = false
+	#Enable seasonal fishing behavior, let enjoy summer.
+	EnableSeasonalFishing = false
+
+[Debug]
+	#Enable debug option to detect illegal use of functions.
+	Debug = false
+	#Enable solar term weather system.
+	UseSolarWeather = true
+	#Without snowy block under the light blocks which level is 0.
+	NotSnowyUnderLight = false
