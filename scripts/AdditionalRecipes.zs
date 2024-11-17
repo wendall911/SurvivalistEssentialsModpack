@@ -28,3 +28,8 @@ craftingTable.addShaped("bundle", <item:minecraft:bundle>, [
     [<item:minecraft:string>],
     [<item:minecraft:leather>]
 ]);
+
+<tag:item:c:salts>.add(<item:croptopia:salt>);
+<tag:item:c:oats>.add(<item:croptopia:oat>);
+<tag:item:c:foods/cooked_egg>.add(<item:farmersdelight:fried_egg>);
+<tag:item:c:melons>.add(<item:minecraft:melon_slice>);
